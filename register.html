@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rejestracja</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="index.html">Strona główna</a></li>
+            <li><a href="catalog.php">Katalog</a></li>
+            <li><a href="cart.php">Koszyk</a></li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <div class="container">
+            <h2 class="catalog-title">Rejestracja</h2>
+            <form action="register.php" method="post" class="form">
+                <div class="form__input-container">
+                    <input type="text" id="username" name="username" class="form__input" required placeholder=" " />
+                    <label for="username" class="form__input-label">Nazwa użytkownika</label>
+                </div>
+                <div class="form__input-container">
+                    <input type="password" id="password" name="password" class="form__input" required placeholder=" " />
+                    <label for="password" class="form__input-label">Hasło</label>
+                </div>
+                <div class="form__input-container">
+                    <input type="email" id="email" name="email" class="form__input" required placeholder=" " />
+                    <label for="email" class="form__input-label">Email</label>
+                </div>
+                <button type="submit" class="form__button">Zarejestruj się</button>
+            </form>
+            <button onclick="window.location.href='login.html'" class="form__button">Masz już konto? Zaloguj się</button>
+        </div>
+    </div>
+</body>
+</html>

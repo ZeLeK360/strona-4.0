@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strona główna</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Dodaj odnośnik do pliku CSS -->
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="index.html">Strona główna</a></li>
+            <li><a href="catalog.php">Katalog</a></li>
+            <li><a href="cart.php">Koszyk</a></li>
+            <li><a href="logout.php">Wyloguj się</a></li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <div class="container">
+            <h1>Witamy na stronie głównej!</h1>
+            <p>Wybierz jedną z poniższych opcji:</p>
+            <button onclick="window.location.href='login.html'" class="form__button">Logowanie</button>
+            <button onclick="window.location.href='register.html'" class="form__button">Rejestracja</button>
+        </div>
+    </div>
+</body>
+</html>
